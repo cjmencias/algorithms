@@ -6,9 +6,9 @@ public class SelectionSortImpl {
 
     public static void main(String[] args) {
         SelectionSortImpl selectionSort = new SelectionSortImpl();
-        System.out.println(Arrays.toString(selectionSort.sort(new int[]{ 5, 3, -2, 0, 5, 9, 14 })));
-        System.out.println(Arrays.toString(selectionSort.sort(new int[]{ 0 })));
-        System.out.println(Arrays.toString(selectionSort.sort(new int[]{  })));
+        System.out.println(Arrays.toString(selectionSort.sort(new int[]{5, 3, -2, 0, 5, 9, 14})));
+        System.out.println(Arrays.toString(selectionSort.sort(new int[]{0})));
+        System.out.println(Arrays.toString(selectionSort.sort(new int[]{})));
     }
 
     /*
