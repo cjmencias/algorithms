@@ -30,8 +30,8 @@ public class InsertionSortImpl {
             }*/
 
             // Better Implementation
-            int i = 0;
-            for (i = unsortedIndex; i > 0 && array[i - 1] > newElement; i--) {
+            int i = unsortedIndex;
+            for (; i > 0 && array[i - 1] > newElement; i--) {
                 array[i] = array[i - 1];
             }
             array[i] = newElement;
