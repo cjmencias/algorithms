@@ -2,7 +2,14 @@ package algo.shellsort;
 
 import java.util.Arrays;
 
-public class ShellSortImpl {
+public class ShellSort20211211Impl {
+
+    public static void main(String[] args) {
+        ShellSort20211211Impl shellSort = new ShellSort20211211Impl();
+        System.out.println(Arrays.toString(shellSort.sort(new int[]{20, 35, -15, 7, 55, 1, -22})));
+        System.out.println(Arrays.toString(shellSort.sort(new int[]{0})));
+        System.out.println(Arrays.toString(shellSort.sort(new int[]{})));
+    }
 
     /*
      * Algorithm: Shell Sort with simplified gap formula
@@ -20,13 +27,6 @@ public class ShellSortImpl {
             }
         }
         return array;
-    }
-
-    public static void main(String[] args) {
-        ShellSortImpl shellSort = new ShellSortImpl();
-        System.out.println(Arrays.toString(shellSort.sort(new int[]{20, 35, -15, 7, 55, 1, -22})));
-        System.out.println(Arrays.toString(shellSort.sort(new int[]{0})));
-        System.out.println(Arrays.toString(shellSort.sort(new int[]{})));
     }
 
 }

@@ -2,7 +2,14 @@ package algo.quicksort;
 
 import java.util.Arrays;
 
-public class QuickSortImpl {
+public class QuickSort20211212Impl {
+
+    public static void main(String[] args) {
+        QuickSort20211212Impl quickSort = new QuickSort20211212Impl();
+        int[] array = new int[]{20, 35, -15, 7, 55, 1, -22};
+        quickSort.sort(array, 0, array.length);
+        System.out.println(Arrays.toString(array));
+    }
 
     /*
      * Algorithm: Quick Sort
@@ -33,13 +40,6 @@ public class QuickSortImpl {
         }
         array[j] = pivot;
         return j;
-    }
-
-    public static void main(String[] args) {
-        QuickSortImpl quickSort = new QuickSortImpl();
-        int[] array = new int[]{20, 35, -15, 7, 55, 1, -22};
-        quickSort.sort(array, 0, array.length);
-        System.out.println(Arrays.toString(array));
     }
 
 }

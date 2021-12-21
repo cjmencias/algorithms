@@ -2,10 +2,10 @@ package algo.insertionsort;
 
 import java.util.Arrays;
 
-public class InsertionSort02Impl {
+public class InsertionSort20211213Impl {
 
     public static void main(String[] args) {
-        InsertionSort02Impl insertionSort = new InsertionSort02Impl();
+        InsertionSort20211213Impl insertionSort = new InsertionSort20211213Impl();
         int[] array = new int[]{20, 35, -15, 7, 55, 1, -22};
         insertionSort.sort(array, array.length - 1);
         System.out.println(Arrays.toString(array));

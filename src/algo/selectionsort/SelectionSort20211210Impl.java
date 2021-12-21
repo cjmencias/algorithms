@@ -2,10 +2,10 @@ package algo.selectionsort;
 
 import java.util.Arrays;
 
-public class SelectionSortImpl {
+public class SelectionSort20211210Impl {
 
     public static void main(String[] args) {
-        SelectionSortImpl selectionSort = new SelectionSortImpl();
+        SelectionSort20211210Impl selectionSort = new SelectionSort20211210Impl();
         System.out.println(Arrays.toString(selectionSort.sort(new int[]{5, 3, -2, 0, 5, 9, 14})));
         System.out.println(Arrays.toString(selectionSort.sort(new int[]{0})));
         System.out.println(Arrays.toString(selectionSort.sort(new int[]{})));

@@ -2,7 +2,13 @@ package algo.mergesort;
 
 import java.util.Arrays;
 
-public class MergeSortImpl02Desc {
+public class MergeSortImpl20211212DescImpl {
+
+    public static void main(String[] args) {
+        MergeSortImpl20211212DescImpl sorting = new MergeSortImpl20211212DescImpl();
+        int[] array = new int[]{20, 35, -15, 7, 55, 1, -22};
+        System.out.println(Arrays.toString(sorting.sort(array, 0, array.length)));
+    }
 
     public int[] sort(int[] array, int start, int end) {
         if (end - start < 2) {
@@ -21,12 +27,6 @@ public class MergeSortImpl02Desc {
             }
         }
         return mArray;
-    }
-
-    public static void main(String[] args) {
-        MergeSortImpl02Desc sorting = new MergeSortImpl02Desc();
-        int[] array = new int[]{20, 35, -15, 7, 55, 1, -22};
-        System.out.println(Arrays.toString(sorting.sort(array, 0, array.length)));
     }
 
 }

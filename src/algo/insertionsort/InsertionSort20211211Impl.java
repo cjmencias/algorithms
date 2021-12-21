@@ -2,7 +2,14 @@ package algo.insertionsort;
 
 import java.util.Arrays;
 
-public class InsertionSortImpl {
+public class InsertionSort20211211Impl {
+
+    public static void main(String[] args) {
+        InsertionSort20211211Impl insertionSort = new InsertionSort20211211Impl();
+        System.out.println(Arrays.toString(insertionSort.sort(new int[]{20, 35, -15, 7, 55, 1, -22})));
+        System.out.println(Arrays.toString(insertionSort.sort(new int[]{0})));
+        System.out.println(Arrays.toString(insertionSort.sort(new int[]{})));
+    }
 
     /*
      * Algorithm: Insertion Sort
@@ -37,13 +44,6 @@ public class InsertionSortImpl {
             array[i] = newElement;
         }
         return array;
-    }
-
-    public static void main(String[] args) {
-        InsertionSortImpl insertionSort = new InsertionSortImpl();
-        System.out.println(Arrays.toString(insertionSort.sort(new int[]{20, 35, -15, 7, 55, 1, -22})));
-        System.out.println(Arrays.toString(insertionSort.sort(new int[]{0})));
-        System.out.println(Arrays.toString(insertionSort.sort(new int[]{})));
     }
 
 }
